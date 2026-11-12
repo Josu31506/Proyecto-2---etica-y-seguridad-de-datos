@@ -1,0 +1,32 @@
+{
+  "tool": "ZAP 2.17.0",
+  "type": "pasivo sobre HTTP local con frontend compilado en producción",
+  "roles": [
+    "sin sesión",
+    "cliente",
+    "entrenador",
+    "administrador"
+  ],
+  "messages": 38,
+  "alerts": [
+    {
+      "id": "10027",
+      "risk": "Informational",
+      "finding": "Information Disclosure - Suspicious Comments",
+      "instances": 3
+    },
+    {
+      "id": "10109",
+      "risk": "Informational",
+      "finding": "Modern Web Application",
+      "instances": 1
+    },
+    {
+      "id": "10112",
+      "risk": "Informational",
+      "finding": "Session Management Response Identified",
+      "instances": 2
+    }
+  ],
+  "limits": "Cobertura de rutas visitadas con datos sintéticos. Repetir con TLS, proveedor de identidad y configuración final en staging."
+}
